@@ -1,0 +1,10 @@
+---
+. name:stop apche service on debian-based systems
+  hosts:webservices
+  become:yes
+  tasks:
+     .name:stop apche2 service
+     ansible.builin.service:
+     name:apache2
+     state:stoped
+   
